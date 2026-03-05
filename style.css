@@ -1,0 +1,206 @@
+/* Общие стили */
+body {
+  background-image: url("flowers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #313636;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+}
+/* Навигация */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgba(243, 240, 220, 0.85);
+  border-bottom: 2px solid #000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-item {
+  text-decoration: none;
+  color: #3f3f3e;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+}
+.nav-item:hover {
+  color: #998f90;
+}
+/* Форма */
+form {
+  background-color: rgba(243, 240, 220, 0.85);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  
+}
+main {
+  display: flex;
+  justify-content: flex-end; 
+  width: 100%;
+}
+.wrapper {
+  display: flex;          
+  justify-content: flex-end; 
+  flex-grow: 1;          
+  padding: 20px;
+  box-sizing: border-box;
+ }
+
+/* main */
+main {
+  max-width: 420px;       
+  flex-shrink: 0;         
+}
+
+/* Заголовок */
+h1 {
+  margin-bottom: 25px;
+  color: #75673a;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Лейблы */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Селекты и инпут */
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #4a3a50;
+}
+
+/* Кнопка */
+button {
+  background-color: #4a3a50;
+  color: rgb(229, 235, 221);
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #857d7d;
+}
+
+/* Итоговая сумма */
+#totalPrice {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #524c5f;
+  text-align: center;
+}
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(243, 240, 220, 0.85);
+  border-top: 2px solid #000;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ===== Адаптация для телефонов (≤480px) ===== */
+@media (max-width: 480px) {
+  .wrapper {
+    justify-content: center;    
+    align-items: flex-start;    
+    padding: 15px 10px;         
+  }
+
+  main {
+    max-width: 95%;            
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  select,
+  input[type="number"] {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  #totalPrice {
+    font-size: 18px;
+  }
+}
+
+/* ===== Адаптация для планшетов и средних экранов (481–1024px) ===== */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    justify-content: center;   
+    align-items: flex-start;
+    padding: 20px 20px;         
+  }
+
+  main {
+    max-width: 420px;          
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  select,
+  input[type="number"] {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  #totalPrice {
+    font-size: 20px;
+  }
+}

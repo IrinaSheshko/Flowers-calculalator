@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <a href="#" class="nav-item start">FLOWERS</a>
+        <a href="#" class="nav-item">О нашей фирме</a>
+        <a href="#" class="nav-item">Наши услуги</a>
+        <a href="#" class="nav-item">Отзывы</a>
+    </nav>
+</div>
+
+<div class="wrapper">
+  <main>
+    <form id="flowerForm" aria-label="Соберите свой букет">
+      <h1>Собери свой букет</h1>
+
+      <label for="selectFlower">Выберите цветок: 🌺</label>
+      <select id="selectFlower" required>
+        <option value="" disabled selected>Выберите цветок </option>
+        <option value="10">Розы 🌸 10$</option>
+        <option value="15">Розы кустовые 🌸 15$</option>
+        <option value="12">Хризантемы кустовые 🌸 12$</option>
+        <option value="14">Хризантемы 🌸 14$</option>
+        <option value="13">Лилии 🌸 13$</option>
+        <option value="20">Герберы 🌸 20$</option>
+        <option value="5">Тюльпаны 🌸 5$</option>
+        <option value="18">Ирисы 🌸 18$</option>
+        <option value="25">Лизиантус 🌸 25$</option>
+        <option value="15">Альстремерии 🌸 15$</option>
+      </select>
+
+      <label for="numberFlower">Введите количество:</label>
+      <input id="numberFlower" type="number" min="1" placeholder="Количество" required />
+
+      <label for="selectGreen">Выберите зелень: 🌿</label>
+      <select id="selectGreen" required>
+        <option value="" disabled selected>Выберите зелень </option>
+        <option value="8">Салал 🌿 8$</option>
+        <option value="15">Берграс 🌿 15$</option>
+        <option value="12">Эвкалипт 🌿 12$</option>
+        <option value="15">Гипсофила 🌿 15$</option>
+        <option value="17">Статица 🌿 17$</option>
+        <option value="12">Гиперикум 🌿 12$</option>
+      </select>
+
+      <label for="selectPackaging">Выберите упаковку: 🎁</label>
+      <select id="selectPackaging" required>
+        <option value="" disabled selected>Выберите упаковку </option>
+        <option value="8">Сетка 🎁 8$</option>
+        <option value="15">Натуральное волокно 🎁 15$</option>
+        <option value="20">Целлофан 🎁 20$</option>
+        <option value="17">Крафт бумага 🎁 17$</option>
+        <option value="15">Фетр 🎁 15$</option>
+        <option value="16">Лента 🎁 16$</option>
+        <option value="18">Корзина малая 🎁 18$</option>
+      </select>
+
+      <button type="button" id="myBouquet">Рассчитать букет</button>
+
+      <p id="totalPrice">Итого: 0$</p>
+    </form>
+  </main>
+</div>
+  
+<footer class="footer">
+  <p>© 2026 Flower Shop. Все права защищены.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
