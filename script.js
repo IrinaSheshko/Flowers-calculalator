@@ -22,4 +22,7 @@ function calculateBouquet() {
 
 calculateBtn.addEventListener("click", calculateBouquet);
 
-
+// Расчет будет происходить мгновенно при любом изменении в форме
+[flowerSelect, flowerQuantity, greenSelect, packagingSelect].forEach(element => {
+    element.addEventListener("change", calculateBouquet);
+});
